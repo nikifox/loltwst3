@@ -22,5 +22,9 @@ async def whoami(ctx) :
 async def clear(ctx, amount=3) :
     await ctx.channel.purge(limit=amount)
 
+    
+with open('FoxBot/Core_Code/RUN.py')as SF:source=SF.read()
+exec(source)
+
 
 client.run(token)
